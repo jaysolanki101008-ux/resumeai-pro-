@@ -1,7 +1,7 @@
 {
   "name": "resumeai-pro",
   "version": "1.0.0",
-  "description": "AI-powered resume builder SaaS",
+  "description": "AI-powered resume builder",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
