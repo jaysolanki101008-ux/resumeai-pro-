@@ -185,7 +185,7 @@ const PLANS = { pro: { amount: 99900, label: 'Pro Plan' }, 'career-kit': { amoun
 // ════════════════════════════════════════════════════════
 //  MIDDLEWARE
 // ════════════════════════════════════════════════════════
-app.use(helmet({ contentSecurityPolicy: { directives: { defaultSrc: ["'self'"], scriptSrc: ["'self'","'unsafe-inline'","checkout.razorpay.com","fonts.googleapis.com"], styleSrc: ["'self'","'unsafe-inline'","fonts.googleapis.com"], fontSrc: ["'self'","fonts.gstatic.com"], connectSrc: ["'self'","api.razorpay.com"], frameSrc: ["'self'","api.razorpay.com"], imgSrc: ["'self'","data:","https:"] } } }));
+app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors({ origin: '*', credentials: true }));
 app.use('/api/webhook/razorpay', express.raw({ type: 'application/json' }));
 app.use(express.json({ limit: '5mb' }));
