@@ -168,8 +168,8 @@ footer{background:#0A0C14;padding:28px 6%;display:flex;align-items:center;justif
 .ft-r a:hover{color:var(--blue)}
 
 /* MODAL */
-.overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(13,15,26,.75);backdrop-filter:blur(6px);align-items:center;justify-content:center}
-.overlay.on{display:flex}
+.overlay{display:flex;position:fixed;inset:0;z-index:2000;background:rgba(13,15,26,.75);backdrop-filter:blur(6px);align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+.overlay.on{opacity:1;pointer-events:all}
 .modal{background:#fff;border-radius:20px;padding:36px;max-width:440px;width:92%;box-shadow:0 24px 80px rgba(13,15,26,.2);animation:mIn .22s ease;position:relative}
 @keyframes mIn{from{transform:scale(.94) translateY(18px);opacity:0}}
 .modal-x{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--ink3);padding:4px 8px}
